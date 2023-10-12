@@ -1,7 +1,7 @@
 import { Route } from '@tanstack/router'
 import { rootRoute } from '..';
-import Home from '../../pages/Home';
-import About from '../../pages/About';
+import Home from '../../pages/Form';
+import About from '../../pages/DragAndDrop';
 
 const mainRoutes = [
   new Route({

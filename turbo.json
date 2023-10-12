@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build", "build:tw"],
+      "outputs": ["dist/**"]
+    },
+    "build:tw": {},
+    "dev": {
+      "persistent": true
+    },
+    "web#dev": {
+      "dependsOn": ["ui#dev"],
+      "outputs": ["dist/**"],
+      "persistent": true
+    },
+    "ui#dev": {
+      "dependsOn": ["build:tw"],
+      "outputs": ["dist/**"],
+      "persistent": true
+    },
+    "dev:ui": {},
+    "lint": {}
+  }
+}

@@ -1,10 +1,11 @@
-import { Outlet, Link } from '@tanstack/router'
+import { Outlet, Link } from '@tanstack/router';
+import 'ui/styles.css';
 
 function App() {
   return (
-    <div className='h-[100dvh] bg-gray-800 text-gray-300 border-gray-500'>
-      <div className='flex flex-wrap px-10 py-5 gap-x-10'>
-        <Link to="/">Form</Link> <Link to="/drag-and-drop">Drag and Drop</Link>
+    <div>
+      <div className='flex flex-wrap px-60 py-5 gap-x-10'>
+        <Link to="/">Form</Link>
       </div>
 
       <Outlet />
