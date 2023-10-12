@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "my-workspaces-powered-project",
+  "scripts": {
+    "start": "concurrently \"cd apps/web && pnpm dev\""
+  },
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  },
+  "packageManager": "pnpm@7.15.0"
+}

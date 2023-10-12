@@ -1,0 +1,4 @@
+[submodule "packages/ui"]
+  branch = main
+	path = packages/ui
+	url = https://github.com/Marsenth/ui.git
